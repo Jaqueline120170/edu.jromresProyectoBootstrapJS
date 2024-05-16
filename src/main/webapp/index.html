@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="JRT" content="jaqeline@gmail.com">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+	rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="custom.css">
+<title>Anatomik 3D</title>
+</head>
+
+<body>
+	<header>
+		<div class=" contenedorInicio container h-100 mw-100 m-auto p-15px">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="#"><img
+					src="imagenes/logp-removebg-preview.png" alt="Logo" width="100"
+					height="100"></a> <span class="tit navbar-text mr-auto">
+					<h1 id="nombreTienda">ANATOMIK 3D</h1>
+				</span>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarText"
+					aria-controls="navbarText" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end"
+					id="navbarText">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item "><a class="nav-link active"
+							href="index.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link"
+							href="productos.html">Productos </a></li>
+						<li class="nav-item"><a class="nav-link" href="sobreN.html">Sobre
+								nostros</a></li>
+						<li class="nav-item"><a class="nav-link button-link"
+							href="carrito.html" onclick="mostrarCarrito()">Ir al Carrito</a>
+						</li>
+
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div id="carouselExampleSlidesOnly" class="carousel slide"
+			data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="imagenes/anatomiaosea1.jpg" class="d-block w-100"
+						alt="imagen1">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/anatomiaosea3d.jpg" class="d-block w-100"
+						alt="imagen2">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/CTA-medicina-3d.jpg" class="d-block w-100"
+						alt="imagen3">
+				</div>
+				<div class="carousel-item">
+					<img src="imagenes/anatomiaosea5d.jpg" class="d-block w-100"
+						alt="imagen4">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleSlidesOnly"
+				role="button" data-slide="prev"> <span
+				class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+				class="sr-only">Anterior</span>
+			</a> <a class="carousel-control-next" href="#carouselExampleSlidesOnly"
+				role="button" data-slide="next"> <span
+				class="carousel-control-next-icon" aria-hidden="true"></span> <span
+				class="sr-only">Siguiente</span>
+			</a>
+		</div>
+
+		<div class="bloqueCategorias mt-4">
+			<div class="container mt-4">
+				<div class="tituloCabeceras mt-4">
+					<h2>Productos Destacados</h2>
+				</div>
+
+				<div class="row categoriasProductos">
+
+					<div class="col-md-3 itemKit">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen1.jpg" alt="anatomiaHumana">
+							<div class="kit">
+								<h3>Kit Anatomia Humana</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 itemKit">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen2.jpg" alt="anatomiaAnimal">
+							<div class="kit">
+								<h3>Kit Anatomia Animal</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 itemKit">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen5.jpg" alt="personalizado">
+							<div class="kit">
+								<h3>Kit Personalizado</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 itemKit ">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen4.jpg" alt="especiales">
+							<div class="kit">
+								<h3>kit Pedidos Especiales</h3>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="bloqueCategorias mt-4">
+			<div class="container mt-4 ">
+				<div class="tituloCabeceras mt-4 ">
+					<h2>Nuestros Cursos</h2>
+				</div>
+
+				<div class="row categoriasProductos">
+
+					<div class="col-md-3 itemKit">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/sobren.jpg" alt="cursoBasico">
+							<div class="kit">
+								<h3>Basico Print 3D</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 itemKit">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen6.jpg" alt="cursoAvanzado">
+							<div class="kit">
+								<h3>Avanzado Print 3D</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 itemKit">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen7.jpg" alt="diseño3d">
+							<div class="kit">
+								<h3>Diseño 3D</h3>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 itemKit ">
+						<a href="productos.html"> <img class="imagenes"
+							src="imagenes/imagen4.jpg" alt="printMedicina">
+							<div class="kit">
+								<h3>Print Medicina</h3>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<section id="section5 mt-4">
+			<div class="row justify-content-center mb-2 mt-4 fila">
+
+				<div id="tabla" class="col-md-9 d-flex mt-4">
+					<div class="row p-2">
+						<div class=" col-12 productosPop">
+							<h2>Nuestro Trabajo</h2>
+						</div>
+						<img src="imagenes/traquea.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2" />
+						<img src="imagenes/vert.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2" />
+						<img src="imagenes/esf.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2">
+						<img src="imagenes/kit3.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2">
+						<img src="imagenes/pie.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2">
+						<img src="imagenes/cerebro.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2">
+						<img src="imagenes/craneos.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2">
+						<img src="imagenes/vertebra.jpg"
+							class="img-circle rounded float-start col-md-3 col-6 col-sm-3 mb-2 g-2">
+						<div id="verde" class="col-sm-12 "></div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class=" piePagina d-flex justify-content-center row mt-2">
+		<div class="text-center">
+
+			<div class="piePagina1 mt-3">
+				<h5 class="card-title">Contacta con nosotros</h5>
+				<p class="card-text">El, C. el Barbero de Sevilla, 1, 41006
+					Sevilla</p>
+				<p class="card-text">Teléfono: 954 64 58 00</p>
+				<p class="card-text">Provincia: Sevilla</p>
+				<a class="icon-link" href="#"> <a class="icon-link" href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+							fill="currentColor" class="bi bi-boxes" viewBox="0 0 16 16">
+							<path
+								d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
+						</svg>
+				</a> <a class="icon-link" href="#"> <svg
+							xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+							fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+							<path
+								d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+						</svg>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

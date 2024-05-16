@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+html, body {
+	width: 100% !important;
+	overflow-x: hidden !important;
+}
+
+#nombreTienda {
+	font-family: "Kode Mono", monospace;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+	color: black;
+}
+
+.nav-link {
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bi {
+	font-size: 2rem;
+	color: white;
+}
+
+.contenedorInicio {
+	background-color: lightgray;
+}
+
+.bloqueCategorias .bloqueDestacados {
+	padding: 60px 0px;
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+}
+
+.bloqueCategorias {
+	position: relative;
+}
+
+.tituloCabeceras h2 {
+	color: black;
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+	padding-bottom: 16px;
+}
+
+.tituloCabeceras h2::after {
+	content: '';
+	width: 76px;
+	height: 5px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	border-radius: 3px;
+}
+
+.categoriasProductos .itemKit {
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	max-height: 360px;
+}
+
+.categoriasProductos .itemKit img {
+	transition: all .3s ease-in;
+}
+
+.categoriasProductos .itemKit img:hover {
+	transform: scale(1.07);
+}
+
+.categoriasProductos .itemKit:hover .kit {
+	transform: translateY(0%);
+}
+
+.categoriasProductos.itemKit .kit {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	transform: translateY(100%);
+	transition: all .3s ease-in;
+}
+
+.categoriasProductos .itemKit .kit h3 {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.productosPop {
+	justify-content: center;
+	text-align: center;
+}
+
+.productosPop h2 {
+	color: black;
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+	padding-bottom: 16px;
+}
+
+.imagenes {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+	border-style: none;
+}
+
+.row {
+	display: flex;
+}
+
+footer {
+	background: black;
+	color: white;
+}
+
+#section3 {
+	background: black;
+	color: white;
+}
+
+.barraLateral {
+	background-color: lightgrey;
+}
+
+.active {
+	font-weight: Bold;
+	font-size: 1.5rem;
+}
+
+.contenedor-productos {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.producto-card {
+	width: 200px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.contenedor-carrito {
+	display: none;
+	margin-top: 20px;
+}
+
+#tabla-carrito {
+	width: 100%;
+}
+
+#tabla-carrito th, #tabla-carrito td {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
+#tabla-carrito th {
+	text-align: left;
+}
